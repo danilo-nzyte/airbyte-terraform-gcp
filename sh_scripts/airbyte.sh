@@ -11,7 +11,7 @@ sudo usermod -a -G docker $USER
 sudo apt-get -y install docker-compose-plugin
 docker compose version
 mkdir airbyte && cd airbyte
-curl -sOO https://raw.githubusercontent.com/airbytehq/airbyte/master/.env
-curl -sOO https://raw.githubusercontent.com/airbytehq/airbyte/master/docker-compose.yaml
-curl -sOO https://raw.githubusercontent.com/airbytehq/airbyte/master/flags.yml
+curl -sOO https://raw.githubusercontent.com/airbytehq/airbyte-platform/main/.env
+curl -sOO https://raw.githubusercontent.com/airbytehq/airbyte-platform/main/docker-compose.yaml
+curl -sOO https://raw.githubusercontent.com/airbytehq/airbyte-platform/main/flags.yml
 docker compose up -d
